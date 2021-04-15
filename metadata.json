@@ -1,0 +1,33 @@
+[
+  {
+    "call_identifier": "1",
+    "speech_file_name": "sample-recordings/recording1.wav",
+    "unit_identifier": "test1",
+    "call_date_and_time": "2021-03-14T00:00:00Z",
+    "call_recording_url": null,
+    "vertical_model": null,
+    "locale": null,
+    "apply_diarization": null,
+    "agent_channel": null,
+    "substitutions": null,
+    "apply_redaction": null,
+    "first_name": null,
+    "last_name": null,
+    "email": null,
+    "phone_number": null,
+    "connection_id": null,
+    "profile_uuid": null
+  },
+  {
+    "call_identifier": "2",
+    "speech_file_name": "sample-recordings/recording2.wav",
+    "unit_identifier": "test2",
+    "call_date_and_time": "2021-03-14T01:00:00Z"
+  },
+  {
+    "call_identifier": "3",
+    "speech_file_name": "sample-recordings/recording3.wav",
+    "unit_identifier": "test3",
+    "call_date_and_time": "2021-03-14T02:00:00Z"
+  }
+]

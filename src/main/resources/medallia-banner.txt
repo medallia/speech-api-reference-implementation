@@ -1,0 +1,15 @@
+
+${AnsiBackground.15}                 ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}        ${AnsiColor.20}█${AnsiColor.236}        ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}       ${AnsiColor.20}███${AnsiColor.236}       ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}  ████  ${AnsiColor.20}█${AnsiColor.236}  ████  ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}  █████   █████  ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}  ███ █████ ███  ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}  ███  ███  ███  ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}  ███       ███  ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}  ███       ███  ${AnsiBackground.DEFAULT}
+${AnsiBackground.15}                 ${AnsiBackground.DEFAULT}${AnsiColor.DEFAULT}
+
+  Medallia, Inc.
+  Copyright (c) 2021.
+  All rights reserved.
