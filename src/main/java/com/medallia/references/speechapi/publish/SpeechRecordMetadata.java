@@ -62,6 +62,10 @@ public class SpeechRecordMetadata {
     @CsvCustomBindByName(column = "locale", converter = EmptyStringToNullStringConverter.class)
     private String locale;
 
+    @JsonProperty("agent_locale")
+    @CsvCustomBindByName(column = "agent_locale", converter = EmptyStringToNullStringConverter.class)
+    private String agentLocale;
+
     @JsonProperty("apply_diarization")
     @CsvCustomBindByName(column = "apply_diarization", converter = EmptyStringToNullStringConverter.class)
     private String applyDiarization;
@@ -96,11 +100,27 @@ public class SpeechRecordMetadata {
 
     @JsonProperty("connection_id")
     @CsvCustomBindByName(column = "connection_id", converter = EmptyStringToNullStringConverter.class)
+    @Deprecated
     private String connectionId;
 
     @JsonProperty("profile_uuid")
     @CsvCustomBindByName(column = "profile_uuid", converter = EmptyStringToNullStringConverter.class)
+    @Deprecated
     private String profileUuid;
+
+    @JsonProperty("engine")
+    @CsvCustomBindByName(column = "engine", converter = StringToEngineConverter.class)
+    private Engine engine;
+
+    @JsonProperty("connector_id")
+    @CsvCustomBindByName(column = "connector_id", converter = EmptyStringToNullStringConverter.class)
+    private String connectorId;
+
+    // Note that is more appropriate as Map<String, Object>, but for the sake
+    // of simplicity, we're just showing the Map<String, String> subcase.
+    @JsonProperty("speech_additional_info")
+    @CsvCustomBindByName(column = "speech_additional_info", converter = StringToMapConverter.class)
+    private Map<String, String> speechAdditionalInfo;
 
     public enum VerticalModel {
         CALL_CENTER("Call Center"),
@@ -149,6 +169,24 @@ public class SpeechRecordMetadata {
         private String displayName;
 
         BooleanString(final String displayName) {
+            this.displayName = displayName;
+        }
+
+        @JsonValue
+        public String getDisplayName() {
+            return this.displayName;
+        }
+    }
+
+    public enum Engine {
+        ENGINE_1("Engine 1"),
+        ENGINE_2("Engine 2"),
+        ENGINE_3("Engine 3"),
+        ;
+
+        private String displayName;
+
+        Engine(final String displayName) {
             this.displayName = displayName;
         }
 

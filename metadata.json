@@ -16,7 +16,10 @@
     "email": null,
     "phone_number": null,
     "connection_id": null,
-    "profile_uuid": null
+    "profile_uuid": null,
+    "engine": null,
+    "connector_id": null,
+    "speech_additional_info": null
   },
   {
     "call_identifier": "2",

@@ -1,4 +1,4 @@
-call_identifier,speech_file_name,unit_identifier,call_date_and_time,call_recording_url,vertical_model,locale,apply_diarization,agent_channel,substitutions,apply_redaction,first_name,last_name,email,phone_number,connection_id,profile_uuid
-1,sample-recordings/recording1.wav,test1,2021-03-14T00:00:00Z,,,,,,,,,,,,,
-2,sample-recordings/recording2.wav,test2,2021-03-14T01:00:00Z,,,,,,,,,,,,,
-3,sample-recordings/recording3.wav,test3,2021-03-14T02:00:00Z,,,,,,,,,,,,,
+call_identifier,speech_file_name,unit_identifier,call_date_and_time,call_recording_url,vertical_model,locale,apply_diarization,agent_channel,substitutions,apply_redaction,first_name,last_name,email,phone_number,connection_id,profile_uuid,engine,connector_id,speech_additional_info
+1,sample-recordings/recording1.wav,test1,2021-03-14T00:00:00Z,,,,,,,,,,,,,,,,
+2,sample-recordings/recording2.wav,test2,2021-03-14T01:00:00Z,,,,,,,,,,,,,,,,
+3,sample-recordings/recording3.wav,test3,2021-03-14T02:00:00Z,,,,,,,,,,,,,,,,
